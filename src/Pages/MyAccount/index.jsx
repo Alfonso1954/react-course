@@ -1,8 +1,9 @@
+import Layout from "../../Components/Layout";
 function MyAccount() {
   return (
-    <div className="App" bg="red-200">
+    <Layout>
       <h1>MyAccount</h1>
-    </div>
+    </Layout>
   );
 }
 

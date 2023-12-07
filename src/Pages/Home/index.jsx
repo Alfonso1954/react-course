@@ -1,9 +1,6 @@
+import Layout from "../../Components/Layout";
 function Home() {
-  return (
-    <div className="App" bg="red-500">
-      <h1>Home</h1>
-    </div>
-  );
+  return <Layout>Home</Layout>;
 }
 
 export default Home;
