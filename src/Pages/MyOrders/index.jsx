@@ -1,10 +1,11 @@
-import Layout from "../../Components/Layout";
+import Layout from '../../Components/Layout'
+
 function MyOrders() {
   return (
     <Layout>
-      <h1>MyOrders</h1>
+      MyOrders
     </Layout>
-  );
+  )
 }
 
-export default MyOrders;
+export default MyOrders
