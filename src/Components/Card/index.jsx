@@ -16,7 +16,8 @@ const Card = (data) => {
           alt={data.data.title}
         />
         <div
-          className="absolute top-0 right-0 flex justify-center items-center bg-white w-6 h-6 rounded-full m-2 p-1 hover:bg-red-300"
+          className="absolute top-0 right-0 flex justify-center items-center bg-white w-6 h-6 rounded-full m-2 p-1 hover:bg-blue
+          hover:text-white transition-colors duration-500"
           onClick={() => context.setCount(context.count + 1)}
         >
           +
