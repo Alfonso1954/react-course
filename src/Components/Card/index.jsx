@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { PlusIcon } from "@heroicons/react/24/solid";
 import { ShoppingCartContext } from "../../Context";
 
 const Card = (data) => {
@@ -20,7 +21,7 @@ const Card = (data) => {
           hover:text-white transition-colors duration-500"
           onClick={() => context.setCount(context.count + 1)}
         >
-          +
+          <PlusIcon className="h-6 w-6 text-grid-500"></PlusIcon>
         </div>
       </figure>
       <p className="flex justify-between">
