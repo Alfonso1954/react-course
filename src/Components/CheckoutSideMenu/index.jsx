@@ -16,10 +16,13 @@ const CheckoutSideMenu = () => {
     context.setCartProducts(filteredProducts);
     context.setCount(filteredProducts.length);
   };
-
+  const currentDate = () => {
+    const date = new Date().toLocaleDateString();
+    return date;
+  };
   const handleCheckout = () => {
     const orderToAdd = {
-      date: "01.02.23",
+      date: currentDate(),
       products: context.cartProducts,
       totalProducts: context.cartProducts.length,
       totalPrice: totalPrice(context.cartProducts),
@@ -60,7 +63,8 @@ const CheckoutSideMenu = () => {
       </div>
       <div className="px-6 mb-6">
         <p className="flex justify-between items-center mb-2">
-          <span className="font-light">Total:</span>
+          <span className="font-bold">{currentDate()}</span>
+          <span className="font-bold">Total:</span>
           <span className="font-medium text-2xl">
             ${totalPrice(context.cartProducts)}
           </span>
