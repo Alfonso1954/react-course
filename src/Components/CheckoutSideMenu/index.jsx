@@ -35,7 +35,7 @@ const CheckoutSideMenu = () => {
     <aside
       className={`${
         context.isCheckoutSideMenuOpen ? "flex" : "hidden"
-      } checkout-side-menu flex-col fixed right-10 border border-black rounded-lg bg-white`}
+      } checkout-side-menu flex-col fixed right-10 border border-black rounded-lg bg-blue-100`}
     >
       <div className="flex justify-between items-center p-6">
         <h2 className="font-medium text-xl">My Order({context.count} items)</h2>
